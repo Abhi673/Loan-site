@@ -2,7 +2,7 @@
 
 ## Run Following commands to Test application locally in your device
 
-In the project directory, we have frontend-react and backend-node directory which are specific to frontend and backend applications respectively:
+In the project directory, we have frontend and backend directory which are specific to frontend and backend applications respectively:
 
 ### To run frontend :
 
