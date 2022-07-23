@@ -1,7 +1,5 @@
 # Customer to Customer Loan Application
 
-## Live site URL: [https://c2c-loan-platform.netlify.app/](https://c2c-loan-platform.netlify.app/)
-
 ## Run Following commands to Test application locally in your device
 
 Clone the project
