@@ -5,8 +5,9 @@ export class MailService {
     <p>C2C Platform</p>
         `
     static async loanApply(senderEmail, amount, tenure, interest_rate) {
+        console.log(senderEmail);
         const res = await transporter.sendMail({
-            from: 'partheev8@gmail.com',
+            from: '2019uee1880@mnit.ac.in',
             to: senderEmail,
             subject: 'Loan Application - C2C Platform ',
 
@@ -18,6 +19,7 @@ export class MailService {
             ${this.endHtml}
             `,
         })
+        console.log("MAILSENT");
     }
     static async modifyLoanRequest(
         senderEmail,
@@ -31,7 +33,7 @@ export class MailService {
         loanId
     ) {
         const res = await transporter.sendMail({
-            from: 'partheev8@gmail.com',
+            from: '2019uee1880@mnit.ac.in',
             to: senderEmail,
             subject: 'Modified Loan Request - C2C Platform ',
 
@@ -62,7 +64,7 @@ export class MailService {
         borrower_email
     ) {
         const res = await transporter.sendMail({
-            from: 'partheev8@gmail.com',
+            from: '2019uee1880@mnit.ac.in',
             to: senderEmail,
             subject: 'Loan Sanctioned - C2C Platform ',
 
@@ -93,7 +95,7 @@ export class MailService {
         reject_user
     ) {
         const res = await transporter.sendMail({
-            from: 'partheev8@gmail.com',
+            from: '2019uee1880@mnit.ac.in',
             to: senderEmail,
             subject: 'Loan Sanctioned - C2C Platform ',
 
