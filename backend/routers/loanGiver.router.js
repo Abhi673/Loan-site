@@ -70,9 +70,11 @@ router.post('/accept-loan', authorizeUser, async (req, res) => {
 })
 
 router.patch('/modify-loan', authorizeUser, async (req, res) => {
+    console.log("hii");
     const prevLoan = await Loan.findOne({ _id: req.body.loanId }).populate(
         'user_id'
     )
+    console.log("heyy");
     Loan.updateOne(
         { _id: req.body.loanId },
         {
