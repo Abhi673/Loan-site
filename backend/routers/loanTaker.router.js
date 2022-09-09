@@ -22,12 +22,17 @@ router.post('/apply-loan', authorizeUser, async (req, res) => {
     const user = await User.findOne({ _id: req.userId }).select(
         'email username'
     )
+    console.log("Hiii");
+    console.log(user.email);
+    
     await MailService.loanApply(
         user.email,
         newLoan.Amount,
         newLoan.Tenure,
         newLoan.Interest_Rate
     )
+
+    console.log("himbhi");
     res.status(200).send('successfully applied for loan')
 })
 
